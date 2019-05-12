@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
     redis-mass.py
     ~~~~~~~~~~~~~
@@ -23,4 +23,4 @@ if __name__ == "__main__":
         f = sys.stdin.readlines()
 
     for line in f:
-        print proto(line.rstrip().split(' ')),
+        print(proto(line.rstrip().split(' ')), end="")
